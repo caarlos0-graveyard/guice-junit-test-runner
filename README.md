@@ -1,10 +1,34 @@
-# GUnit - A Simple Guice JUnit TestRunner.
+# guice-junit-test-runner
 
-A small lib to do tests with JUnit and Guice.
+A very simple artifact, with no dependencies besides JUnit and Guice,
+which is intended to make it easier to test your Guice code.
 
-It's soooo big that it have a lot of classes (just one),
-and a howto use is described
-[here](http://carlosbecker.com/posts/gunit-guice-and-junit-fall-in-love/).
+## Usage
 
-You can clone this repo, cd and do a `mvn clean install`, then add
-the dependency in your `pom.xml`.
+Add the dependency to your `pom.xml`:
+
+```xml
+<dependency>
+	<groupId>com.carlosbecker</groupId>
+	<artifactId>guice-junit-test-runner</artifactId>
+	<version>1.0.0</version>
+</dependency>
+```
+
+Write your tests:
+
+```java
+@RunWith(GuiceTestRunner.class)
+@GuiceModules(MyModule.class)
+public class MyTest {
+	@Inject
+	private Something something;
+
+	@Test
+	public void testItWorks() throws Exception {
+		assertThat(something.doSomething(), notNullValue());
+	}
+}
+```
+
+And that's it!

@@ -130,11 +130,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>caarlos0/maven-snapshots</id>
-			<url>../maven/snapshots</url>
+			<url>file://../maven/snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>caarlos0/maven-releases</id>
-			<url>../maven/releases</url>
+			<url>file://../maven/releases</url>
 		</repository>
 	</distributionManagement>
 </project>

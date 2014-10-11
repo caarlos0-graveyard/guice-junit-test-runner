@@ -12,10 +12,11 @@ Add the dependency to your `pom.xml`:
 	<groupId>com.carlosbecker</groupId>
 	<artifactId>guice-junit-test-runner</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<scope>test</scope>
 </dependency>
 ```
 
-> This is not maven central yet, so this will not work just now.
+> This is not in maven central yet, so this will not work just now.
 
 Write your tests:
 

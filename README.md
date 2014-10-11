@@ -11,9 +11,11 @@ Add the dependency to your `pom.xml`:
 <dependency>
 	<groupId>com.carlosbecker</groupId>
 	<artifactId>guice-junit-test-runner</artifactId>
-	<version>1.0.0</version>
+	<version>1.0-SNAPSHOT</version>
 </dependency>
 ```
+
+> This is not maven central yet, so this will not work just now.
 
 Write your tests:
 

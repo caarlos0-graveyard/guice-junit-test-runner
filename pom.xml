@@ -7,12 +7,31 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<url>http://carlosbecker.com</url>
+	<name>guice-junit-test-runner</name>
+	<description>A simple Guice JUnit test runner.</description>
 
 	<scm>
 		<connection>scm:git:git://github.com/caarlos0/guice-junit-test-runner.git</connection>
 		<developerConnection>scm:git:git@github.com:caarlos0/guice-junit-test-runner.git</developerConnection>
 		<url>http://github.com/caarlos0/guice-junit-test-runner</url>
 	</scm>
+
+	<developers>
+		<developer>
+			<email>caarlos0@gmail.com</email>
+			<name>Carlos Alexandro Becker</name>
+			<url>https://carlosbecker.com</url>
+			<id>caarlos0</id>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -10,7 +10,8 @@ import com.google.inject.Module;
 public class GuiceTestRunner extends BlockJUnit4ClassRunner {
 	private Injector injector;
 
-	public GuiceTestRunner(Class<?> klass) throws InitializationError {
+	public GuiceTestRunner(Class<?> klass) throws InitializationError,
+			InstantiationException, IllegalAccessException {
 		super(klass);
 		injector = createInjectorFor(getModulesFor(klass));
 	}
@@ -23,12 +24,9 @@ public class GuiceTestRunner extends BlockJUnit4ClassRunner {
 	}
 
 	private Injector createInjectorFor(Class<?>[] classes)
-			throws InitializationError {
-		try {
-			return createInjector(classes);
-		} catch (InstantiationException | IllegalAccessException e) {
-			throw new InitializationError(e);
-		}
+			throws InitializationError, InstantiationException,
+			IllegalAccessException {
+		return createInjector(classes);
 	}
 
 	private Injector createInjector(Class<?>[] classes)

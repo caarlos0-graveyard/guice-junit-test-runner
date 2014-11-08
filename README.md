@@ -27,9 +27,25 @@ public class MyTest {
 
 	@Test
 	public void testItWorks() throws Exception {
-		assertThat(something.doSomething(), notNullValue());
+		Assert.assertThat(something.doSomething(), CoreMatchers.notNullValue());
 	}
 }
 ```
 
 And that's it!
+
+## How to contribute
+
+Fork repository, make changes, send a pull request. I will review
+your changes and apply them to the `master` branch shortly. To
+avoid frustration, previously build your branch with:
+
+```sh
+mvn clean install -Pqulice
+```
+
+## Got questions?
+
+If you have questions or general suggestions, don't hesitate to submit
+a new [Github issue](/issues/new).
+

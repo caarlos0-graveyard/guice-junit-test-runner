@@ -42,12 +42,12 @@ import org.junit.runner.RunWith;
  */
 @RunWith(GuiceTestRunner.class)
 @GuiceModules(TestModule.class)
-public class GuiteTestRunnerIntegrationTest {
+public class GuiceTestRunnerIntegrationTest {
     /**
      * Injected worker instance.
      */
     @Inject
-    private Worker worker;
+    private transient Worker worker;
 
     /**
      * Verify that the instance is not null.

@@ -44,7 +44,7 @@ public class GuiceTestRunnerTest {
      * @checkstyle VisibilityModifierCheck (5 lines)
      */
     @Rule
-    public ExpectedException expected = ExpectedException.none();
+    public transient ExpectedException expected = ExpectedException.none();
 
     /**
      * Assure that a full configured class can be tested.
@@ -52,7 +52,7 @@ public class GuiceTestRunnerTest {
      */
     @Test
     public final void testFullClass() throws Exception {
-        new GuiceTestRunner(new FullTestClassExample().getClass());
+        new GuiceTestRunner(FullTestClassExample.class);
     }
 
     /**
@@ -62,8 +62,7 @@ public class GuiceTestRunnerTest {
     @Test
     public final void testMissgingGuiceModules() throws Exception {
         this.expected.expect(InitializationError.class);
-        final NoGuiceModulesExample test = new NoGuiceModulesExample();
-        new GuiceTestRunner(test.getClass());
+        new GuiceTestRunner(NoGuiceModulesExample.class);
     }
 
     /**
@@ -73,7 +72,6 @@ public class GuiceTestRunnerTest {
     @Test
     public final void testPrivateConstructorModule() throws Exception {
         this.expected.expect(InitializationError.class);
-        final PrivateConstructorExample test = new PrivateConstructorExample();
-        new GuiceTestRunner(test.getClass());
+        new GuiceTestRunner(PrivateConstructorExample.class);
     }
 }

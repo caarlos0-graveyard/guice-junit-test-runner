@@ -42,5 +42,6 @@ public class FullTestClassExample {
      */
     @Test
     public void testName() {
+        // do nothing
     }
 }

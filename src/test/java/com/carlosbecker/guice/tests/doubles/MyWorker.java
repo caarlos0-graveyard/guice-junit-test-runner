@@ -32,5 +32,6 @@ package com.carlosbecker.guice.tests.doubles;
 public class MyWorker implements Worker {
     @Override
     public void work() {
+        // do nothing
     }
 }

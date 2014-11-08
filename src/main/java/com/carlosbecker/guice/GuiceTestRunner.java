@@ -55,7 +55,7 @@ public class GuiceTestRunner extends BlockJUnit4ClassRunner {
     /**
      * The Guice Injector.
      */
-    private final Injector injector;
+    private final transient Injector injector;
 
     /**
      * Contructor.

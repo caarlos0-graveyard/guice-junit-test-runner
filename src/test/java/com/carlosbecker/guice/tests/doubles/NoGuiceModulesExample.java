@@ -41,5 +41,6 @@ public class NoGuiceModulesExample {
      */
     @Test
     public void testName() {
+        // do nothing
     }
 }

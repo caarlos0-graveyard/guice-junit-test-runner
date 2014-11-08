@@ -21,7 +21,7 @@
 		<tag>HEAD</tag>
 	</scm>
 	<properties>
-		<jacoco.minimum>0.75</jacoco.minimum>
+		<jacoco.minimum>1.00</jacoco.minimum>
 		<coveralls.token>GdAkrGlpnyR4yBpSbBuV6KkwMP4P9zc2w</coveralls.token>
 	</properties>
 

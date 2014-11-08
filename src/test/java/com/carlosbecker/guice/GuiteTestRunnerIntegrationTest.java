@@ -15,7 +15,7 @@ import com.carlosbecker.guice.doubles.Worker;
 
 @RunWith(GuiceTestRunner.class)
 @GuiceModules(TestModule.class)
-public class JUnitTestRunnerTest {
+public class GuiteTestRunnerIntegrationTest {
 	@Inject
 	private Worker worker;
 

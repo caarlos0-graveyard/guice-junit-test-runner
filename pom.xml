@@ -46,7 +46,8 @@
 	</scm>
 	<properties>
 		<jacoco.minimum>1.00</jacoco.minimum>
-		<coveralls.token>GdAkrGlpnyR4yBpSbBuV6KkwMP4P9zc2w</coveralls.token>
+		<mutation.minimum>100</mutation.minimum>
+        <coveralls.token>GdAkrGlpnyR4yBpSbBuV6KkwMP4P9zc2w</coveralls.token>
 	</properties>
 
 	<dependencies>

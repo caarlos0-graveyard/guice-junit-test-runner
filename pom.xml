@@ -47,6 +47,7 @@
 	<properties>
 		<jacoco.minimum>1.00</jacoco.minimum>
 		<coveralls.token>GdAkrGlpnyR4yBpSbBuV6KkwMP4P9zc2w</coveralls.token>
+		<guice.version>4.1.0</guice.version>
 	</properties>
 
 	<dependencies>
